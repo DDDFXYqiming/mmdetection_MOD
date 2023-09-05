@@ -562,7 +562,7 @@ python mmdetection/combined_cv.py
 
 视频数据可视化结果：
 
-![xingche2gif](./resources/xingche2.gif)
+![xingche2gif](./resources/demo.gif)
 
 
 ## 模型部署
