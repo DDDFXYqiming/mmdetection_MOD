@@ -503,7 +503,7 @@ YOLOX还展示了不同目标区域（small、medium、large）下的平均召�
 - 从头部提取的特征结果输出（预测）关键点
 - 关键点预测结果的解码，转为原图片数据中的真实坐标
 
-模型的configs文件存放位置为 `/home/omnisky/disk14/team/feixiaoyue/configs/yolox/yolox_s_8xb8-300e_coco.py` 
+模型的configs文件存放位置为 `/feixiaoyue/configs/yolox/yolox_s_8xb8-300e_coco.py` 
 
 实现如下关键点标签预测效果：
 
@@ -517,7 +517,7 @@ yolox_s的参数量和计算复杂度如下
 
 ![模型参数](./resources/模型参数.png)
 
-在数据集转换得到筛选之后的子数据集 `/home/omnisky/disk14/team/feixiaoyue/camera_selected_50` ，转换成 Object Keypoint类型的标注格式的COCO数据集格式 进行验证，得到实验结果yolox_s的测试结果：
+在数据集转换得到筛选之后的子数据集 `/feixiaoyue/camera_selected_50` ，转换成 Object Keypoint类型的标注格式的COCO数据集格式 进行验证，得到实验结果yolox_s的测试结果：
 
 ![测试结果](./resources/测试结果.png)
 
