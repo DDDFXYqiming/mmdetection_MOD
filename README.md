@@ -410,7 +410,7 @@ python demo/video_demo.py demo/xingche2.mp4 \
 
 ## 实验数据集
 
-任务：基于Yolo完成目标检测任务，学习camera标签的的车头尾框+整体框+轮胎点，实现模型在平台部署并推理、筛选数据。
+任务：基于Yolo完成目标检测任务，学习标签的的车头尾框+整体框+轮胎点，实现模型在平台部署并推理、筛选数据。
 
 训练模型对所采集的数据进行数据清洗，模型要求能够筛选出所给数据中的出现待检测目标的图片，包括整车（car）、车头车尾（car）、行人（ped）和骑行者（cyclist）。模型训练使用的数据集是经过筛选的camera数据，共112964张，标注了4个类别，包括整车（car）、车头车尾（car）、行人（ped）和骑行者（cyclist）：
 
@@ -418,9 +418,9 @@ python demo/video_demo.py demo/xingche2.mp4 \
 
 <!-- ![示例图片](./resources/visualization_9.jpg) -->
 
-该数据集筛选含有待检测的4类目标，并且至少有距离摄像头50米以内的目标的数据。数据集按照9：0.5：0.5的比例划分训练集、验证集和测试集。数据集转换成mmdetection要求的coco格式，存放在 `/home/omnisky/disk14/team/feixiaoyue/camera_selected_50`
+该数据集筛选含有待检测的4类目标，并且至少有距离摄像头50米以内的目标的数据。数据集按照9：0.5：0.5的比例划分训练集、验证集和测试集。数据集转换成mmdetection要求的coco格式，存放在 `/feixiaoyue/camera_selected_50`
 
-训练完成的模型参数权重文件存放在 `/home/omnisky/disk14/team/feixiaoyue/mmdetection/work_dirs`
+训练完成的模型参数权重文件存放在 `/feixiaoyue/mmdetection/work_dirs`
 
 
 ## MMdetection框架YOLOX的KPI计算方法解释
