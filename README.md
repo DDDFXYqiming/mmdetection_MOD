@@ -410,11 +410,7 @@ python demo/video_demo.py demo/xingche2.mp4 \
 
 ## 实验数据集
 
-服务器地址：172.16.172.17
-
-数据集地址：/home/omnisky/disk14/team/feixiaoyue/camera_selected_50
-
-实习任务：基于Yolo完成目标检测任务，学习camera标签的的车头尾框+整体框+轮胎点，实现模型在平台部署并推理、筛选数据。
+任务：基于Yolo完成目标检测任务，学习camera标签的的车头尾框+整体框+轮胎点，实现模型在平台部署并推理、筛选数据。
 
 训练模型对所采集的数据进行数据清洗，模型要求能够筛选出所给数据中的出现待检测目标的图片，包括整车（car）、车头车尾（car）、行人（ped）和骑行者（cyclist）。模型训练使用的数据集是经过筛选的camera数据，共112964张，标注了4个类别，包括整车（car）、车头车尾（car）、行人（ped）和骑行者（cyclist）：
 
