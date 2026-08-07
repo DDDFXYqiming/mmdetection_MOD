@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mmdet-scripts"
+version = "2.0.0"
+description = "mmdetection_MOD 数据管线：COCO 转换、分割、筛选、可视化与导出"
+requires-python = ">=3.9"
+dependencies = [
+    "opencv-python-headless>=4.8",
+]
+
+[project.optional-dependencies]
+torch = ["torch"]
+
+[project.scripts]
+mmdet-scripts = "mmdet_scripts.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
