@@ -4,8 +4,8 @@
         "task": "ObjectDetection",
         "codebase": "mmdet",
         "version": "3.1.0",
-        "pth": "/home/omnisky/disk14/team/feixiaoyue/mmdetection/work_dirs/yolox_s_8xb8-300e_coco/epoch_300.pth",
-        "config": "/home/omnisky/disk14/team/feixiaoyue/mmdetection/configs/yolox/yolox_s_8xb8-300e_coco.py"
+        "pth": "work_dirs/yolox_s_8xb8-300e_coco/epoch_300.pth",
+        "config": "configs/yolox/yolox_s_8xb8-300e_coco.py"
     },
     "codebase_config": {
         "type": "mmdet",
