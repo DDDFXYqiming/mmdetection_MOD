@@ -1,6 +1,6 @@
 # mmdetection_MOD 数据管线（mmdet-scripts）
 
-多类别目标检测 + 关键点估计项目（YOLOX / mmdetection）。仓库主体为官方 mmdetection 框架，本仓库 `refactor` 分支将**顶层原创脚本**重构为统一数据管线包，框架本体未做任何改动。
+多类别目标检测 + 关键点估计项目（YOLOX / mmdetection）。仓库主体为官方 mmdetection 框架，本仓库 `refactor` 分支把**顶层原创脚本**重构为统一数据管线包。
 
 ## 原脚本 → 新命令映射
 
