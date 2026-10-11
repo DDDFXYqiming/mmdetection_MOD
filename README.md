@@ -64,19 +64,23 @@ mmdet-scripts viz-pkl results.pkl --compare --annotation-file instances_val2017.
 
 ---
 
-## 项目结构
-
-```text
-src/mmdet_scripts/
-├── cli.py          # Click/Argparse 统一命令行入口
-├── config.py       # 类别元数据与默认超参数
-├── utils.py        # 文件读写与几何计算通用工具
-├── coco/           # 数据集切分 (split)、格式转换 (convert) 与垃圾清理 (cleanup)
-├── filter/         # 光学距离筛选 (select)
-├── visualize/      # 真值可视化 (visualize) 与 PKL 对比渲染 (viz-pkl)
-├── tools/          # 帧流转视频 (to-video) 与 PKL 快速巡检 (read-pkl)
-└── export/         # ONNX 模型导出 (export-onnx)
+```mermaid
+flowchart TD
+    CLI["统一命令行入口 (cli.py)"] --> COCO["COCO 数据工程 (coco/)<br/>· 时序切分 split<br/>· 格式转换 convert<br/>· 孤立文件清理 cleanup"]
+    CLI --> Filter["空间筛选 (filter/)<br/>· 光学测距与跳帧 select"]
+    CLI --> Viz["可视化验证 (visualize/)<br/>· 真值渲染 visualize<br/>· 预测比对 viz-pkl"]
+    CLI --> Tools["媒体流与巡检 (tools/)<br/>· 帧流转视频 to-video<br/>· 快速巡检 read-pkl"]
+    CLI --> Export["部署交付 (export/)<br/>· ONNX 动态导出 export-onnx"]
 ```
+
+* **`cli.py`**：统一命令行入口
+* **`config.py`**：类别元数据与默认超参数
+* **`utils.py`**：文件 I/O 与几何计算通用工具
+* **`coco/`**：数据集时序切分、格式转换与垃圾清理
+* **`filter/`**：光学距离与时间跨度筛选
+* **`visualize/`**：真值可视化与 PKL 预测叠层对比渲染
+* **`tools/`**：帧流转视频与 PKL 快速巡检
+* **`export/`**：ONNX 模型导出与动态尺寸配置
 
 ---
 
